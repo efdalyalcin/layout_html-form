@@ -1,1 +1,23 @@
-/* styles go here */
+body {
+  margin: 0;
+}
+
+.container-div {
+  margin: 10px;
+}
+
+.container {
+  margin: 0 0 20px;
+}
+
+.container-labels {
+  margin: 10px 0;
+}
+
+.container-labels-first {
+  margin: 0 0 10px;
+}
+
+.container-labels-last {
+  margin: 10px 0 0;
+}
