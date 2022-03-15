@@ -21,99 +21,93 @@
       <fieldset class="container">
         <legend>Personal information</legend>
 
-        <div class="container-labels-first">
-          <label for="surname-id">Surname:</label>
-          <input
-            type="text"
-            name="surname"
-            id="surname-id"
-            autocomplete="off"
-            minlength="2"
-            maxlength="20"
-            required
-          >
-        </div>
+        <label for="surname-id">Surname:</label>
+        <input
+          type="text"
+          name="surname"
+          id="surname-id"
+          class="input"
+          autocomplete="off"
+          minlength="2"
+          maxlength="20"
+          required
+        >
+        <br>
 
-        <div class="container-labels">
-          <label for="name-id">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name-id"
-            autocomplete="off"
-            minlength="2"
-          >
-        </div>
+        <label for="name-id">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name-id"
+          autocomplete="off"
+          minlength="2"
+          class="input"
+        >
+        <br>
 
-        <div class="container-labels">
-          <label for="age-id">How old are You?</label>
-          <input
-            type="number"
-            name="age"
-            value="12"
-            max="100"
-            min="1"
-            id="age-id"
-          >
-        </div>
+        <label for="age-id">How old are You?</label>
+        <input
+          type="number"
+          name="age"
+          value="12"
+          max="100"
+          min="1"
+          id="age-id"
+          class="input"
+        >
+        <br>
 
-        <div class="container-labels">
-          <label for="birth-id">Full date of birth:</label>
-          <input
-            type="date"
-            name="birth-date"
-            id="birth-id"
-          >
-        </div>
+        <label for="birth-id">Full date of birth:</label>
+        <input
+          type="date"
+          name="birth-date"
+          id="birth-id"
+          class="input"
+        >
+        <br>
 
-        <div class="container-labels-last">
-          <label for="agreement-id">I accept the term of the agreement</label>
-          <input
-            type="checkbox"
-            name="terms-of-agreement"
-            id="agreement-id"
-          >
-        </div>
+        <label for="agreement-id">I accept the term of the agreement</label>
+        <input
+          type="checkbox"
+          name="terms-of-agreement"
+          id="agreement-id"
+        >
       </fieldset>
 
       <fieldset class="container">
         <legend>Registration</legend>
 
-        <div class="container-labels-first">
-          <label for="email-id">E-mail:</label>
-          <input
-            type="email"
-            placeholder="email@example.com"
-            name="email"
-            id="email-id"
-            required
-          >
-        </div>
+        <label for="email-id">E-mail:</label>
+        <input
+          type="email"
+          placeholder="email@example.com"
+          name="email"
+          id="email-id"
+          class="input"
+          required
+        >
+        <br>
 
-        <div class="container-labels-last">
-          <label for="pass-id">Password:</label>
-          <input
-            type="password"
-            name="password"
-            id="pass-id"
-            required
-          >
-        </div>
+        <label for="pass-id">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="pass-id"
+          required
+        >
       </fieldset>
 
       <fieldset class="container">
         <legend>An interesting fact about you!</legend>
 
-        <div class="container-labels-first">
+        <div class="input-container">
           <label for="cats-id">Do you love cats?</label>
-
           <input
             type="radio"
             name="cat-lover"
             id="cat-lover-id"
           >
           <label for="cat-lover-id">Yes</label>
-
           <input
             type="radio"
             name="cat-lover"
@@ -122,25 +116,27 @@
           <label for="cat-hate-id">No</label>
         </div>
 
-        <div class="container-labels">
-          <label for="color-id">What is your favorite color?</label>
-          <input
-            type="color"
-            name="color"
-            id="color-id"
-          >
-        </div>
 
-        <div class="container-labels">
-          <label for="bed-time-id">What time do you go to bed?</label>
-          <input
-            type="time"
-            name="bed-time"
-            id="bed-time-id"
-          >
-        </div>
+        <label for="color-id">What is your favorite color?</label>
+        <input
+          type="color"
+          name="color"
+          id="color-id"
+          class="input"
+        >
+        <br>
 
-        <div class="container-labels">
+        <label for="bed-time-id">What time do you go to bed?</label>
+        <input
+          type="time"
+          name="bed-time"
+          id="bed-time-id"
+          class="input"
+        >
+        <br>
+
+
+        <div class="input-container">
           <label for="car-id">What are your favorite brand of cars?</label>
           <select
             name="car-names"
@@ -153,23 +149,21 @@
           </select>
         </div>
 
-        <div class="container-labels-last">
-          <label for="work-rate">How do you rate our work?</label>
-          <input
-            type="range"
-            name="work-rate"
-            id="work-rate"
-            value="0"
-            max="100"
-            min="0"
-          >
-        </div>
+        <label for="work-rate">How do you rate our work?</label>
+        <input
+          type="range"
+          name="work-rate"
+          id="work-rate"
+          value="0"
+          max="100"
+          min="0"
+        >
       </fieldset>
 
       <fieldset class="container">
         <legend>Additional info:</legend>
 
-        <div class="container-labels-first">
+        <div class="input-container">
           <label for="comments-id">Comments:</label>
           <textarea
             name="comments"
@@ -181,13 +175,12 @@
           </textarea>
         </div>
 
-        <div class="container-labels-last">
-          <label for="recommend-id">Would you recommend us?</label>
-          <select name="recommend" id="recommend-id">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </div>
+
+        <label for="recommend-id">Would you recommend us?</label>
+        <select name="recommend" id="recommend-id">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
       </fieldset>
 
       <button type="submit" class="container">Submit</button>

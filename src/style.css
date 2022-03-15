@@ -4,21 +4,18 @@ body {
 }
 
 .container-div {
-  margin: 8px 10px;
+  margin: 8px;
 }
 
 .container {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
-.container-labels {
-  margin: 10px 0;
-}
-
-.container-labels-first {
+.input {
+  display: inline-block;
   margin: 0 0 10px;
 }
 
-.container-labels-last {
-  margin: 10px 0 0;
+.input-container {
+  margin: 0 0 10px;
 }
